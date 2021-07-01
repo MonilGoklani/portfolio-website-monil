@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import {MdKeyboardArrowRight,MdArrowForward} from 'react-icons/md'
+import {MdEmail} from 'react-icons/md'
+
 
 export const HeroContainer = styled.div`
 background: #0c0c0c;
@@ -54,9 +56,10 @@ align-items: center;
 `
 
 export const HeroH1 = styled.h1`
-color:#fff;
+color:#fca311;
 font-size: 48px;
 text-align : center;
+font-family: 'JMH';
 
 @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -69,10 +72,11 @@ text-align : center;
 
 export const HeroP = styled.p`
 margin-top: 24px;
-color: #fff;
+color: #e5e5e5;
 font-size: 24px;
 text-align: center;
 max-width: 600px;
+// text-shadow: 2px 2px #e5e5e5;
 
 @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -80,6 +84,23 @@ max-width: 600px;
 
 @media screen and (max-width: 480px) {
     font-size: 18px;
+}
+`
+
+export const HeroP2 = styled.p`
+margin-top: 24px;
+color: #fff;
+font-size: 18px;
+text-align: center;
+max-width: 600px;
+font-family: 'JMH';
+
+@media screen and (max-width: 768px) {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+    font-size: 12px;
 }
 `
 
@@ -98,4 +119,33 @@ font-size: 20px;
 export const ArrowRight = styled(MdKeyboardArrowRight)`
 margin-left: 8px;
 font-size: 20px;
+`
+
+export const Mail = styled(MdEmail)`
+font-size: 30px;
+color:#black;
+margin-left:8px;
+`
+
+export const Button = styled.a`
+border-radius: 50px;
+background: ${({primary}) => (primary? '#fca311' : '#010606')};
+white-space: nowrap;
+padding: ${({big}) => (big ? '14px 48px' : '6px 30px')};
+color: ${({dark}) => (dark? '#010606' : '#fff')};
+font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+outline: none;
+border: none;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.2s ease-in-out;
+text-decoration:none;
+
+
+&:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? '#fff' : '#fca311')}
+}
 `

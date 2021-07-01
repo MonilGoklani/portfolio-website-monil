@@ -25,13 +25,13 @@ height:80px;
 z-index: 1;
 width: 100%;
 padding: 0 24px;
-max-width: 1100px;
+// max-width: 1100px;
 `
 export const NavLogo = styled(LinkR)`
 color: #fff;
 justify-self: flex-start;
 cursor:pointer;
-font-size: 1.5rem;
+font-size: 1.25rem;
 display: flex;
 align-items: center;
 margin-left: 24px;
@@ -59,6 +59,8 @@ align-items: center;
 list-style:none;
 text-align:center;
 margin-right: -22px;
+width:100%;
+justify-content:center;
 
 @media screen and (max-width: 768px) {
     display: none;
@@ -78,7 +80,7 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 &.active {
-    border-bottom: 5px solid #01bf71;
+    border-bottom: 5px solid #fca311;
 }
 `;
 

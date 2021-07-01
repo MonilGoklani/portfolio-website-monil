@@ -25,9 +25,9 @@ const Navbar = ({toggle}) => {
     return (
             <Nav scrollNav = {scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to = '/' onClick = {toggleHome}>
-                        dolla
-                    </NavLogo>
+                    {/* <NavLogo to = '/' onClick = {toggleHome}>
+                        Monil Goklani
+                    </NavLogo> */}
                     <MobileIcon onClick = {toggle}>
                         <FaBars/>
                     </MobileIcon>
@@ -45,9 +45,9 @@ const Navbar = ({toggle}) => {
                             <NavLinks to='signup' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Sign Up</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
+                    {/* <NavBtn>
                         <NavBtnLink to = '/signin'>Sign In</NavBtnLink>
-                    </NavBtn>
+                    </NavBtn> */}
                 </NavbarContainer>
             </Nav>
     )

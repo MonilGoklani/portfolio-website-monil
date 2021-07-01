@@ -1,5 +1,5 @@
 import React from 'react'
-import {SidebarContainer,Icon,CloseIcon,SidebarWrapper,SidebarRoute,SidebarLink,SideBtnWrap,SidebarMenu} from './SidebarElements'
+import {SidebarContainer,Icon,CloseIcon,SidebarWrapper,SidebarRoute,SidebarLink,SideBtnWrap,SidebarMenu, Button, Mail} from './SidebarElements'
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
@@ -15,9 +15,10 @@ const Sidebar = ({isOpen, toggle}) => {
                         <SidebarLink to='signup' onClick={toggle}>Sign Up</SidebarLink>
                     </SidebarMenu>
                     <SideBtnWrap>
-                        <SidebarRoute to='/signin'>
+                    <Button href="mailto:monil2912@gmail.com" primary='false' dark='true'>Get In Touch <Mail/></Button>
+                        {/* <SidebarRoute to='/signin'>
                             Sign In
-                        </SidebarRoute>
+                        </SidebarRoute> */}
                     </SideBtnWrap>
             </SidebarWrapper>
        </SidebarContainer>

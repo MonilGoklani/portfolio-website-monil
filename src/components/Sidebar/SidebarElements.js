@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import {Link as LinkS} from 'react-scroll';
 import {Link as LinkR} from 'react-router-dom';
+import {MdEmail} from 'react-icons/md'
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -87,4 +88,32 @@ text-decoration: none;
     background: #fff;
     color: #010606;
 }
+`
+
+export const Button = styled.a`
+border-radius: 50px;
+background: ${({primary}) => (primary? '#fca311' : '#010606')};
+white-space: nowrap;
+padding: ${({big}) => (big ? '14px 48px' : '6px 30px')};
+color: ${({dark}) => (dark? '#010606' : '#fff')};
+font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+outline: none;
+border: none;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.2s ease-in-out;
+text-decoration:none;
+
+
+&:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? '#fff' : '#fca311')}
+}`
+
+export const Mail = styled(MdEmail)`
+font-size: 30px;
+color:#black;
+margin-left:8px;
 `
