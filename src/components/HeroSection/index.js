@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HeroBg>
             <HeroContent>
-                <p style={{color:'white'}}>Hello! My name is </p>
+                <p style={{color:'#f0f1f4', fontFamily: "Lato"}}>Hello! My name is </p>
                 <HeroH1>Monil Goklani</HeroH1>
                 <HeroP>
                 Curiosity powers my engine &#128642;
@@ -22,7 +22,7 @@ const HeroSection = () => {
                 I am a full-stack developer with a diverse background in engineering and business. I am passionate about delivering impactful engineering solutions that solve modern day problems and have a net positive effect on how we live today
                 </HeroP2>
                 <HeroBtnWrapper>
-                    <Button href="mailto:monil2912@gmail.com" primary='false' dark='true'>Get In Touch <Mail/></Button>
+                    <Button href="mailto:monil2912@gmail.com" primary='false'>Get In Touch <Mail/></Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

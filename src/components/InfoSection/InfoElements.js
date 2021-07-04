@@ -2,33 +2,34 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
 color: #fff;
-background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+background: ${({lightBg}) => (lightBg ? '#f0f1f4' : '#111521')};
 
 @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 40px 0;
 }
 `
 
 export const InfoWrapper = styled.div`
 display: grid;
 z-index: 1;
-height: 860px;
-width: 100%;
-max-width: 1100px;
+// height: 860px;
+min-height: 860px;
+width: 100vw;
+// max-width: 1100px;
 margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
-justify-content: center;
+// justify-content: space-around;
 `
 
 export const InfoRow = styled.div`
 display: grid;
 grid-auto-columns : minmax(auto, 1fr);
-align-items: center;
+// align-items: center;
 grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
 @media screen and (max-width: 768px) {
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`)}
 }
 `
 
@@ -45,14 +46,23 @@ grid-area: col2;
 `
 
 export const TextWrapper = styled.div`
-max-width: 540px;
-padding-top: 0;
-padding-bottom: 60px
+// max-width: 540px;
+margin-top: 3rem;
+padding-bottom: 60px;
+padding-left: 2rem;
+padding-right: 2rem;
+
+
+@media screen and (max-width: 480px) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-top: 2rem;
+}
 `
 
 export const TopLine = styled.p`
-color: #01bf71;
-font-size: 16px;
+color: ${({lightBg}) => (lightBg? '#101010' : '#f0f1f4')};
+font-size: 2rem;
 line-height: 16px;
 font-weight: 700;
 letter-spacing: 1.4px;
@@ -73,11 +83,18 @@ color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 `
 
 export const Subtitle = styled.p`
-max-width: 440px;
+// max-width: 440px;
 margin-bottom: 35px;
-font-size: 18px;
+font-size: 1.2rem;
 line-height: 24px;
-color: ${({ darkText}) => (darkText ? '#010606' : '#fff')};
+color: ${({ darkText}) => (darkText ? '#111521' : '#fff')};
+text-align: justify;
+white-space: pre-wrap;
+font-family:"Lato";
+
+@media screen and (max-width: 480px) {
+    font-size: 14px;
+}
 `
 
 export const BtnWrap = styled.div`
@@ -86,12 +103,19 @@ justify-content: flex-start
 `
 
 export const ImgWrap = styled.div`
-max-width: 555px;
-height: 100%
+// max-width: 555px;
+// height: 100%;
+display: flex;
+justify-content:center;
+margin-top: 3rem;
 `
 
 export const Img = styled.img`
-width: 100%;
+width: 75%;
 margin: 0 0 10px 0;
 padding-right: 0;
+
+@media screen and (max-width: 480px) {
+    width: 100%;
+}
 `

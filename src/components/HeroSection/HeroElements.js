@@ -56,10 +56,11 @@ align-items: center;
 `
 
 export const HeroH1 = styled.h1`
-color:#fca311;
+color:#fff;
 font-size: 48px;
 text-align : center;
-font-family: 'JMH';
+font-family: 'Playfair Display';
+padding-top: 1rem;
 
 @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -72,7 +73,7 @@ font-family: 'JMH';
 
 export const HeroP = styled.p`
 margin-top: 24px;
-color: #e5e5e5;
+color: #f0f1f4;
 font-size: 24px;
 text-align: center;
 max-width: 600px;
@@ -89,11 +90,11 @@ max-width: 600px;
 
 export const HeroP2 = styled.p`
 margin-top: 24px;
-color: #fff;
+color: #f0f1f4;
 font-size: 18px;
 text-align: center;
 max-width: 600px;
-font-family: 'JMH';
+font-family: 'Lato';
 
 @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -129,7 +130,7 @@ margin-left:8px;
 
 export const Button = styled.a`
 border-radius: 50px;
-background: ${({primary}) => (primary? '#fca311' : '#010606')};
+background: ${({primary}) => (primary? '#5f06ba' : '#010606')};
 white-space: nowrap;
 padding: ${({big}) => (big ? '14px 48px' : '6px 30px')};
 color: ${({dark}) => (dark? '#010606' : '#fff')};
@@ -146,6 +147,7 @@ text-decoration:none;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({primary}) => (primary ? '#fff' : '#fca311')}
+    background: ${({primary}) => (primary ? '#b100e8' : '#fca311')};
+    color: ${({dark}) => (dark? '#010606' : '#fff')};
 }
 `

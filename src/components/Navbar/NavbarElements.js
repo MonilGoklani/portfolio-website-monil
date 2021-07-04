@@ -80,7 +80,7 @@ padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 &.active {
-    border-bottom: 5px solid #fca311;
+    border-bottom: 5px solid #b100e8;
 }
 `;
 
