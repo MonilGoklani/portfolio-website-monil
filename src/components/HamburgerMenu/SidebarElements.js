@@ -71,12 +71,6 @@ display: flex;
 justify-content: center;
 `
 
-export const Resume = styled.a`
-text-decoration:none;
-font-size: 1.5rem;
-color:#fff;
-padding:15px;
-}`
 
 export const Button = styled.a`
 border-radius: 50px;
