@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
-import {Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink,ResumeContainer,Resume} from './NavbarElements';
+import {Nav,NavbarContainer,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink,ResumeContainer,Resume} from './NavbarElements';
 import { animateScroll as scroll} from 'react-scroll';
 import resume from '../../assets/resume_MG.pdf';
 import {GoFileSymlinkFile} from 'react-icons/go'
@@ -19,10 +19,6 @@ const Navbar = ({toggle}) => {
     useEffect(()=>{
         window.addEventListener('scroll',changeNav)
     },[])
-
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
 
     return (
             <Nav scrollNav = {scrollNav}>

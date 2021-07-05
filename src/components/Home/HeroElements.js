@@ -69,6 +69,8 @@ padding-top: 1rem;
 
 @media screen and (max-width: 480px) {
     font-size: 2.2rem;
+    -webkit-box-reflect: below -15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.4)));
+
 }
 `
 

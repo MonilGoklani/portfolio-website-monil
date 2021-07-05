@@ -1,6 +1,5 @@
 import React from 'react'
-import {SidebarContainer,Icon,CloseIcon,SidebarWrapper,SidebarRoute,SidebarLink,SideBtnWrap,SidebarMenu, Button, Mail,Resume} from './SidebarElements'
-import resume from '../../assets/resume_MG.pdf'
+import {SidebarContainer,Icon,CloseIcon,SidebarWrapper,SidebarLink,SideBtnWrap,SidebarMenu, Button, Mail} from './SidebarElements'
 const Sidebar = ({isOpen, toggle}) => {
     return (
        <SidebarContainer isOpen = {isOpen} onClick = {toggle}>
