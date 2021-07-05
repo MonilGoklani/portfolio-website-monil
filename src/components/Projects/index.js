@@ -20,7 +20,7 @@ const Project = () => {
                         <div style={{display:'flex',justifyContent:"flex-start"}}>
                         <Link href = 'https://www.youtube.com/watch?v=1o6VUA8-eQs&ab_channel=FullstackAcademy' target="_blank">Watch Demo</Link>
                         <SocialIcons>
-                            <SocialIconLink href='/' target = '_blank' aria-label='Facebook'>
+                            <SocialIconLink href='https://github.com/Doomsday-Blockbuster/Doombuster' target = '_blank' aria-label='Github'>
                                 <FaGithub/>
                             </SocialIconLink>
                         </SocialIcons>
@@ -37,7 +37,7 @@ const Project = () => {
                         <div style={{display:'flex',justifyContent:"flex-start"}}>
                             <Link href = 'https://youtu.be/tlEl75mydVY?t=3102' target="_blank">Watch Demo</Link>
                             <SocialIcons>
-                                <SocialIconLink href='/' target = '_blank' aria-label='Facebook'>
+                                <SocialIconLink href='https://github.com/MonilGoklani/wisecracker' target = '_blank' aria-label='Github'>
                                     <FaGithub/>
                                 </SocialIconLink>
                             </SocialIcons>
@@ -54,7 +54,7 @@ const Project = () => {
                         <div style={{display:'flex',justifyContent:"flex-start"}}>
                             <Link href = 'https://grace-shopper-gimmicks.herokuapp.com/' target="_blank">Check it Out</Link>
                             <SocialIcons>
-                                <SocialIconLink href='/' target = '_blank' aria-label='Facebook'>
+                                <SocialIconLink href='https://github.com/Graceshopper-Gimmick/Grace-Shopper-Gimmick/tree/main/fs-app-template' target = '_blank' aria-label='Github'>
                                     <FaGithub/>
                                 </SocialIconLink>
                             </SocialIcons>
