@@ -18,6 +18,10 @@ const HeroSection = () => {
                 <HeroP>
                 Curiosity powers my engine &#128642;
                 </HeroP>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <HeroP2>
                 I am a full-stack developer with a diverse background in engineering and business. I am passionate about delivering impactful engineering solutions that solve modern day problems and have a net positive effect on how we live today
                 </HeroP2>

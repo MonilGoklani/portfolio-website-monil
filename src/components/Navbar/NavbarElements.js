@@ -93,22 +93,22 @@ align-items: center;
 }
 `
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.a`
+text-decoration:none;
 border-radius: 50px;
-background: #01bf71;
+background: #5f06ba;
 white-space: nowrap;
 padding: 10px 22px;
-color: #010686;
+color: white;
 font-size: 16px;
 outline: none;
 border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
-text-decoration: none;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: #b100e8;
+    color: white;
 }
 `

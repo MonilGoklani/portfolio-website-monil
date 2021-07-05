@@ -90,9 +90,16 @@ text-decoration: none;
 }
 `
 
+export const Resume = styled.a`
+text-decoration:none;
+font-size: 1.5rem;
+color:#fff;
+padding:15px;
+}`
+
 export const Button = styled.a`
 border-radius: 50px;
-background: ${({primary}) => (primary? '#fca311' : '#010606')};
+background: ${({primary}) => (primary? '#5f06ba' : '#010606')};
 white-space: nowrap;
 padding: ${({big}) => (big ? '14px 48px' : '6px 30px')};
 color: ${({dark}) => (dark? '#010606' : '#fff')};
@@ -109,7 +116,8 @@ text-decoration:none;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({primary}) => (primary ? '#fff' : '#fca311')}
+    background: ${({primary}) => (primary ? '#b100e8' : '#fca311')};
+    color: ${({dark}) => (dark? '#010606' : '#fff')};
 }`
 
 export const Mail = styled(MdEmail)`

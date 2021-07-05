@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: '6px 16px',
     background: '#f0f1f4',
+    ['@media (max-width:480px)']: { // eslint-disable-line no-useless-computed-key
+      padding: '3px 8px',
+    }
   },
   
   year: {
@@ -67,8 +70,15 @@ const useStyles = makeStyles((theme) => ({
   connector: {
     height: '3rem'
   },
+  timeline: {
+    ['@media (max-width:480px)']: { // eslint-disable-line no-useless-computed-key
+      padding: '5px'
+    }
+  },
   timelineItem : {
-    padding: '0px'
+    ['@media (max-width:480px)']: { // eslint-disable-line no-useless-computed-key
+      width: '95vw'
+    }
   }
 }));
 
@@ -76,8 +86,8 @@ export default function CustomizedTimeline() {
   const classes = useStyles();
 
   return (
-    <Timeline align="alternate">
-      <TimelineItem>
+    <Timeline align="alternate" className = {classes.timeline}>
+      <TimelineItem className = {classes.timelineItem}>
         <TimelineOppositeContent className = {classes.oppositeItem}>
           <Typography className={classes.year}>
             2007 - 2010

@@ -20,6 +20,10 @@ margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
 // justify-content: space-around;
+
+@media screen and (max-width: 480px) {
+    padding: 1rem 0 1rem 0;
+}
 `
 
 export const InfoRow = styled.div`
@@ -107,7 +111,7 @@ export const ImgWrap = styled.div`
 // height: 100%;
 display: flex;
 justify-content:center;
-margin-top: 3rem;
+margin-top: 2rem;
 `
 
 export const Img = styled.img`

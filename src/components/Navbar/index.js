@@ -1,7 +1,8 @@
 import React, {useState,useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
 import {Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from './NavbarElements';
-import { animateScroll as scroll} from 'react-scroll'
+import { animateScroll as scroll} from 'react-scroll';
+import resume from '../../assets/resume_MG.pdf'
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -25,9 +26,6 @@ const Navbar = ({toggle}) => {
     return (
             <Nav scrollNav = {scrollNav}>
                 <NavbarContainer>
-                    {/* <NavLogo to = '/' onClick = {toggleHome}>
-                        Monil Goklani
-                    </NavLogo> */}
                     <MobileIcon onClick = {toggle}>
                         <FaBars/>
                     </MobileIcon>
@@ -42,12 +40,12 @@ const Navbar = ({toggle}) => {
                             <NavLinks to='projects' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Projects</NavLinks>
                         </NavItem>
                         {/* <NavItem>
-                            <NavLinks to='signup' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Sign Up</NavLinks>
+                            <NavLinks to='signup' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Resume</NavLinks>
                         </NavItem> */}
                     </NavMenu>
-                    {/* <NavBtn>
-                        <NavBtnLink to = '/signin'>Sign In</NavBtnLink>
-                    </NavBtn> */}
+                    <NavBtn>
+                        <NavBtnLink href = {resume} target = "_blank">Resume</NavBtnLink>
+                    </NavBtn>
                 </NavbarContainer>
             </Nav>
     )

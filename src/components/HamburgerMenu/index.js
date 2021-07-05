@@ -1,6 +1,6 @@
 import React from 'react'
-import {SidebarContainer,Icon,CloseIcon,SidebarWrapper,SidebarRoute,SidebarLink,SideBtnWrap,SidebarMenu, Button, Mail} from './SidebarElements'
-
+import {SidebarContainer,Icon,CloseIcon,SidebarWrapper,SidebarRoute,SidebarLink,SideBtnWrap,SidebarMenu, Button, Mail, Resume} from './SidebarElements'
+import resume from '../../assets/resume_MG.pdf'
 const Sidebar = ({isOpen, toggle}) => {
     return (
        <SidebarContainer isOpen = {isOpen} onClick = {toggle}>
@@ -10,9 +10,9 @@ const Sidebar = ({isOpen, toggle}) => {
            <SidebarWrapper>
                     <SidebarMenu>
                         <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-                        <SidebarLink to='discover' onClick={toggle}>Discover</SidebarLink>
-                        <SidebarLink to='services' onClick={toggle}>Services</SidebarLink>
-                        <SidebarLink to='signup' onClick={toggle}>Sign Up</SidebarLink>
+                        <SidebarLink to='journey' onClick={toggle}>Journey</SidebarLink>
+                        <SidebarLink to='projects' onClick={toggle}>Projects</SidebarLink>
+                        <Resume href = {resume} target = "_blank">Resume</Resume>
                     </SidebarMenu>
                     <SideBtnWrap>
                     <Button href="mailto:monil2912@gmail.com" primary='false' dark='true'>Get In Touch <Mail/></Button>

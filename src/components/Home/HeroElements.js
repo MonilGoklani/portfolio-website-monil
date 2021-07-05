@@ -9,7 +9,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 30px;
-height: 800px;
+height: 100vh;
 position: relative;
 z-index: 1;
 
@@ -57,34 +57,35 @@ align-items: center;
 
 export const HeroH1 = styled.h1`
 color:#fff;
-font-size: 48px;
+font-size: 4rem;
 text-align : center;
 font-family: 'Playfair Display';
 padding-top: 1rem;
+-webkit-box-reflect: below -28px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(65%, transparent) , to(rgba(250, 250, 250, 0.4)));
 
 @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 2.2rem;
 }
 `
 
 export const HeroP = styled.p`
 margin-top: 24px;
 color: #f0f1f4;
-font-size: 24px;
+font-size: 1.5rem;
 text-align: center;
 max-width: 600px;
 // text-shadow: 2px 2px #e5e5e5;
 
 @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 1rem;
 }
 `
 
@@ -97,11 +98,11 @@ max-width: 600px;
 font-family: 'Lato';
 
 @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 480px) {
-    font-size: 12px;
+    font-size: 14px;
 }
 `
 
