@@ -25,6 +25,7 @@ height:80px;
 z-index: 1;
 width: 100%;
 padding: 0 24px;
+align-items:center;
 // max-width: 1100px;
 `
 export const NavLogo = styled(LinkR)`
@@ -112,3 +113,23 @@ transition: all 0.2s ease-in-out;
     color: white;
 }
 `
+
+export const ResumeContainer = styled.div`
+display:none;
+
+@media screen and (max-width: 760px) {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    left: 1rem;
+    outline: none;
+}
+`
+
+export const Resume = styled.a`
+text-decoration:none;
+font-size: 1.3rem;
+color:#fff;
+padding:5px;
+display:flex;
+}`
