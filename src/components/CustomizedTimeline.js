@@ -192,7 +192,7 @@ export default function CustomizedTimeline() {
             <Typography className={classes.eventTitle}>Cummins</Typography>
             <Typography className={classes.eventDescription}>
               {" "}
-              Technical Project Manager (IOT / Telematics)
+              Digital Solutions Engineer (UI/UX)
             </Typography>
             {/* <Typography className={classes.eventDescription}>
               {" "}
@@ -237,7 +237,7 @@ export default function CustomizedTimeline() {
             <Typography className={classes.eventTitle}>Scene Health</Typography>
             <Typography className={classes.eventDescription}>
               {" "}
-              Frontend Developer{" "}
+              Full Stack Developer | Frontend UI Specialist{" "}
             </Typography>
           </Paper>
         </TimelineContent>
