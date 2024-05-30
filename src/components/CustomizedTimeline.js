@@ -179,7 +179,7 @@ export default function CustomizedTimeline() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent className={classes.oppositeItem}>
-          <Typography className={classes.year}>2018 - Current</Typography>
+          <Typography className={classes.year}>2018 - 2021</Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot className={classes.timelineDot}>
